@@ -1,0 +1,121 @@
+<!doctype html>
+<html>
+<head>
+	<title>React Classified App</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.24/browser.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.3.1/react.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.3.1/react-dom.js"></script>
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="font-awesome-4.6.3/css/font-awesome.min.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+	.img{
+	width:20px;
+	height:20px;
+	margin:15px 10px 0 0;
+	}
+	.glyphicon{
+		margin:16px 10px 0 0;
+	}
+	
+	.ckbtn{
+		margin-top:-16px;
+		font-size:12px;
+	}
+	
+	.ckbtnli{
+		margin: 17px 32px 0 0;
+		border:1px solid #2196F3;
+		border-radius:18px 18px 18px 18px;
+		height:20px;
+		width:83px;
+	}
+	
+	</style>
+</head>
+<body >
+<div id="app"></div>
+
+
+<script type="text/babel">
+var Header= React.createClass({
+	render: function(){
+		return(	
+			<nav className="navbar navbar-default">
+				<div className="container-fluid">
+					<div className="navbar-header col-md-10">
+						<ul className="nav navbar-nav">
+						<li><img className="navbar-brand" src="images/check.svg" className="img"/></li>
+						<li><a className="navbar-brand" href="#">TEAM OF TEAMS</a></li>
+						</ul>
+					</div>
+					<ul className="nav navbar-nav col-md-2">
+						 <li className="ckbtnli"><a role="button" className="ckbtn text-info">Check In</a></li>
+						<li><span className="glyphicon glyphicon-list-alt"></span></li>
+						<li><span className="glyphicon glyphicon-bell"></span></li>
+						<li><span className="glyphicon glyphicon-user"></span></li>  
+					</ul>
+				</div>
+			</nav>
+		);
+	},
+});
+
+var Table = React.createClass({
+	render: function(){
+		return(
+		<div className="col-md-7">
+			<form>
+				<div className="row">
+					<div className="col-md-10">
+						<input type="search" className="form-control" placeholder="Search"/>
+					</div>
+					<div className="col-md-2">  
+						<a type="submit" className="btn btn-default">Submit</a>
+					</div>
+				</div>
+			</form>
+			<table className="table table-condensed" >
+				<thead>
+				  <tr>
+					<th>Firstname</th>
+					<th>Lastname</th>
+					<th>Email</th>
+				  </tr>
+				</thead>
+				<tbody>
+				  <tr>
+					<td>John</td>
+					<td>Doe</td>
+					<td>john@example.com</td>
+				  </tr>
+				  <tr>
+					<td>Mary</td>
+					<td>Moe</td>
+					<td>mary@example.com</td>
+				  </tr>
+				  <tr>
+					<td>July</td>
+					<td>Dooley</td>
+					<td>july@example.com</td>
+				  </tr>
+				</tbody>
+			</table>
+		</div>
+		);
+	}
+});
+		
+ReactDOM.render(
+	<div>
+		<Header/>
+		<Table/>
+	</div>
+	,document.getElementById("app")
+);
+		
+</script>
+</body>
+</html>
