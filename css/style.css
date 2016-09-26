@@ -1,0 +1,133 @@
+body{
+	background-color:#EEEEEE;
+	}
+	
+	/* navbar */
+	.userimg-h{
+	width:25px;
+	height:25px;
+	margin:11px 10px 0 0;
+	}
+	
+	.hfa{
+		margin:18px 8px 0 0;
+	}
+	
+	.ckbtn{
+		margin-top:-16px;
+		font-size:11px;
+	}
+	
+	.ckbtnli{
+		margin: 17px 32px 0 0;
+		border:1px solid #29B6F6;
+		border-radius:18px;
+		height:20px;
+		width:76px;
+	}
+	.navbar{
+	background-color:white;
+	box-shadow: 0 0 2px #999999;
+	}
+	
+	/* navbar */
+	
+	/* table */
+	.tbl{
+	background-color:white;
+	margin-left:50px;
+	height:550px;
+	padding:0;
+	box-shadow: 0 2px 3px #999999;
+	}
+	
+	thead, tbody{
+	color:#29B6F6;
+	font-size:10px;
+	}
+	
+	th,td{
+	padding:0 100px 0 100px ;
+	}
+	
+	table{
+	margin-top:-10px;
+	}
+	
+	
+	.slct{
+	border:none;
+	outline:none;
+	border-bottom:1px solid;
+	margin:20px 0 0 0;
+	opacity:0.5;
+	}
+	
+	.search{
+	border:none;
+	outline:none;
+	width:550px;
+	}
+	
+	.fasearch{
+	margin:20px 10px 0 20px;
+	}
+	
+	/* Table */
+	
+	/* cards */
+	
+	.cards{
+	background-color:white;
+	width:150px;
+	height:180px;
+	margin-left:20px;
+	box-shadow: 0 2px 3px #999999;
+	margin-bottom:10px;
+	padding:0;
+	}
+	
+	.teamimg{
+	width:70px;
+	height:70px;
+	margin:5px 0 5px 38px;
+	}
+	
+	.cards>h6{
+	text-align:center;
+	color:#29B6F6;
+	font-weight:bold;
+	}
+	
+	.locimg{
+	width:20px;
+	height:20px;
+	}
+	
+	.location{
+	margin-left:40px;
+	color:#29B6F6;
+	}
+	
+	.cardHr{
+	margin-top:4px;
+	margin-bottom:0;
+	}
+	
+	.userimg-c{
+	width:30px;
+	height:30px;
+	margin:5px 0 0 10px;
+	padding:0 8px 0 0;
+	border-right:1px solid rgba(0,0,0,0.1);
+	}
+	
+	
+	.percentage{
+	text-decoration:none;
+	color:#29B6F6;
+	font-size:8px;
+	margin:0 0 0 40px;
+	}
+	
+	/* cards */
